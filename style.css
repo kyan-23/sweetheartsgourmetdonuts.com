@@ -121,6 +121,14 @@ img
     max-width: 44rem;
 }
 
+.hero-actions
+{
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .button
 {
     display: inline-flex;
@@ -286,4 +294,25 @@ img
     {
         width: 100%;
     }
+}
+
+.section-gallery {
+  padding: 72px 0;
+  background: #fff7fb;
+  min-height: 100vh;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(91, 46, 67, 0.12);
 }
